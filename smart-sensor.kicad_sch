@@ -1,0 +1,11 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0") (uuid "cb1599cf-6369-48b7-9306-81794ef28b50") (paper "A4") (lib_symbols) 
+
+(text "System Overview:\n- MCU: ESP32-S3 based controller with WiFi connectivity\n- Digital Outputs: 16 relay channels (220V-DC, 5A rated)\n- Analog Inputs: 16 channels via I2C ADC\n- Communication: WiFi + MQTT for home automation integration" (exclude_from_sim no) (at 50 70 0) (effects (font (size 2 2) (thickness 0.4) (bold yes)) (justify left bottom)) (uuid "22efc1f6-c256-4562-9a75-098bb9ae4465")) 
+
+(text "Implementation Details:\n- Output Stage: 2x 74HC595 shift registers for relay control\n- Analog Input: Multiple ADS1115 16-bit ADC via I2C\n- Power Requirements: 3.3V for logic, 5V for relays\n- Protection: Optoisolation for relay control, TVS for analog inputs" (exclude_from_sim no) (at 50 100 0) (effects (font (size 2 2) (thickness 0.4) (bold yes)) (justify left bottom)) (uuid "33e9ebf5-5693-46ea-84b0-b22dd06e8118")) 
+
+(text "ESP32-S3 Smart Home Automation System" (exclude_from_sim no) (at 50 50 0) (effects (font (size 2 2) (thickness 0.4) (bold yes)) (justify left bottom)) (uuid "8f499add-1b3b-4c7f-9ae2-ac1d9f0bccf7")) 
+
+(text "Safety Considerations:\n- High voltage isolation required for 220V-DC switching\n- Proper grounding scheme for safety\n- TVS protection on analog inputs\n- Relay contact protection for DC switching" (exclude_from_sim no) (at 50 130 0) (effects (font (size 2 2) (thickness 0.4) (bold yes)) (justify left bottom)) (uuid "9137e7cb-1356-4a2f-819a-8be45c3c0f25")) (sheet_instances (path "/" (page "1"))) (embedded_fonts no) 
+
+(text "ESP32-S3 Smart Home Relay and Sensor Controller with 16 Relay Channels and Analog Inputs" (at 50.0 40.0 0) (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom)) (uuid 3c4c0404-d0c6-442f-9af2-3b7b9a04f3bd)))
